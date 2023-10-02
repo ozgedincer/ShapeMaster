@@ -3,10 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ShapeMaster.Domain.Common;
 
 namespace ShapeMaster.Domain.Entities
 {
-    internal class Square
+    internal class Square: Shape
     {
+        public decimal OneSide { get; set; }
+
+        public override decimal GetArea()
+        {
+            return OneSide *OneSide ;
+        }
     }
 }

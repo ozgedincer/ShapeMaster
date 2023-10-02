@@ -7,14 +7,18 @@ using System.Threading.Tasks;
 
 namespace ShapeMaster.Domain.Entities
 {
-    internal class Triangle : Shape
+
+    internal class Circle : Shape
     {
-        public decimal Base { get; set; }
-        public decimal Height { get; set; }
+
+        public decimal r { get; set; }
+        public decimal Pi { get; } = 3.14159M;
 
         public override decimal GetArea()
         {
-            return (Base*Height)/2 ;
+            return Pi * r * r;
         }
+
     }
+
 }
