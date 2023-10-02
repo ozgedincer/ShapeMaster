@@ -14,6 +14,11 @@ namespace ShapeMaster.Domain.Entities
         public decimal r { get; set; }
         public decimal Pi { get; } = 3.14159M;
 
+        public Circle()
+        {
+            Type = "Circle";
+        }
+
         public override decimal GetArea()
         {
             return Pi * r * r;

@@ -12,6 +12,11 @@ namespace ShapeMaster.Domain.Entities
         public decimal ASide { get; set; }
         public decimal BSide { get; set; }
 
+        public Rectangle()
+        {
+            Type = "Rectangle";
+        }
+
         public override decimal GetArea()
         {
             return ASide*BSide;

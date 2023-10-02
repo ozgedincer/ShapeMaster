@@ -11,6 +11,10 @@ namespace ShapeMaster.Domain.Entities
     {
         public decimal OneSide { get; set; }
 
+        public Square()
+        {
+            Type = "Square";
+        }
         public override decimal GetArea()
         {
             return OneSide *OneSide ;

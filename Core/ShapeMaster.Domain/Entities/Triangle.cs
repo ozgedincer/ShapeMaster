@@ -12,6 +12,11 @@ namespace ShapeMaster.Domain.Entities
         public decimal Base { get; set; }
         public decimal Height { get; set; }
 
+        public Triangle()
+        {
+            Type = "Triangle";
+        }
+
         public override decimal GetArea()
         {
             return (Base*Height)/2 ;

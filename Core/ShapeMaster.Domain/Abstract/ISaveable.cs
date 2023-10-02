@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShapeMaster.Domain.Common
+namespace ShapeMaster.Domain.Abstract
 {
-    internal class IShape
+    internal class ISaveable
     {
     }
 }
